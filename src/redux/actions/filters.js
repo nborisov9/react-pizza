@@ -1,7 +1,7 @@
 // Action Creator - ф-ция которая возвращает объект
-const setSortBy = name => ({
-	type: 'SET_SORT_BY',
-	payload: name // принимает какие-то дополнительные данные
+export const setSortBy = ({ type, order }) => ({
+  type: 'SET_SORT_BY',
+  payload: { type, order }, // принимает какие-то дополнительные данные
 })
 
 // Action - просто возвращает объект
@@ -11,7 +11,7 @@ const setSortBy = name => ({
 // }
 
 // Action Creator
-const setCategory = catIndex => ({
-	type: 'SET_CATEGORY',
-	payload: catIndex
+export const setCategory = (catIndex) => ({
+  type: 'SET_CATEGORY',
+  payload: catIndex,
 })
