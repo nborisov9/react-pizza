@@ -103,8 +103,6 @@ PizzaBlock.propTypes = {
   addedCount: PropTypes.number,
 }
 
-// пропсы по умолчанию
-// example: если types не был передан, то указываем какое он будет принимать значение
 PizzaBlock.defaultProps = {
   name: '---',
   price: 0,

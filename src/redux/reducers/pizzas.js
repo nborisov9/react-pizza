@@ -23,4 +23,3 @@ export const pizzas = (state = initialState, action) => {
 }
 
 export default pizzas
-// import in reducers/index.js
